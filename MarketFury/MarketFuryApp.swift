@@ -8,7 +8,7 @@ import SwiftUI
 struct MarketFuryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeTabView()
         }
     }
 }
