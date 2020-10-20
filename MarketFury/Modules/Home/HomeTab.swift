@@ -5,6 +5,12 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    
+    init() {
+            UITabBar.appearance().barTintColor = UIColor.black
+            UITabBar.appearance().isTranslucent = true
+        }
+    
     var body: some View {
         TabView {
             Home()
@@ -29,7 +35,6 @@ struct HomeTabView: View {
                 }
         }
         .font(.headline)
-        .padding(.bottom, 8)
     }
 }
 
