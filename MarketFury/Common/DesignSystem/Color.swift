@@ -6,23 +6,23 @@ import SwiftUI
 
 extension Color {
 
-    static private let purple = Color(hex: "#323232")
+    static private let purple = Color(hex: "#6200EE")
     static private let green = Color(hex: "#03DAC6")
     static private let black = Color(hex:"#121212")
     static private let white = Color(hex: "#FFFFFF")
     static private let red = Color(hex: "#C51162")
     
-    static let primary = purple
-    static let secondary = green
-    static let surface = white
-    static let background = white
-    static let error = red
+    static let themePrimary = purple
+    static let themeSecondary = green
+    static let themeSurface = white
+    static let themeBackground = white
+    static let themeError = red
     
-    static let onPrimary = white
-    static let onSecondary = black
-    static let onSurface = black
-    static let onBackground = black
-    static let onError = white
+    static let themeOnPrimary = white
+    static let themeOnSecondary = black
+    static let themeOnSurface = black
+    static let themeOnBackground = black
+    static let themeOnError = white
 }
 
 extension Color {
@@ -42,5 +42,16 @@ extension Color {
         let blue = Double(rgbValue & 0x0000FF) / 255.0
         
         self.init(.sRGB, red: red, green: green, blue: blue)
+    }
+}
+
+
+struct Color_Previews: PreviewProvider {
+    static var previews: some View {
+        ScrollView{
+            /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/.foregroundColor(.themePrimary)
+            Text("Hello, World!").foregroundColor(.themeSecondary)
+            /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/.foregroundColor(.themeError)
+        }
     }
 }

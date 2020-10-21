@@ -14,12 +14,9 @@ struct CardView: View {
             Spacer()
             VStack{
                 Text(title)
-                    .padding()
-                    .font(.largeTitle)
-                    .foregroundColor(Color.white)
+                    .h2()
                 Text(subTitle)
-                    .padding(.bottom)
-                    .foregroundColor(Color.white)
+                    .h3()
             }
             Spacer()
         }

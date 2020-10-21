@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F468CE42540AF41005A19AA /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F468CE32540AF41005A19AA /* Typography.swift */; };
 		5F6B13CF253CB56500D3ABCF /* MarketFuryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B13CE253CB56500D3ABCF /* MarketFuryApp.swift */; };
 		5F6B13D1253CB56500D3ABCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B13D0253CB56500D3ABCF /* ContentView.swift */; };
 		5F6B13D3253CB56900D3ABCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6B13D2253CB56900D3ABCF /* Assets.xcassets */; };
@@ -20,7 +21,7 @@
 		5F6B142A253D724100D3ABCF /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B1429253D724100D3ABCF /* Stock.swift */; };
 		5F6B142F253D751900D3ABCF /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B142E253D751900D3ABCF /* Portfolio.swift */; };
 		5F6B1439253E11DE00D3ABCF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B1438253E11DE00D3ABCF /* CardView.swift */; };
-		5F6B1442253F2DB100D3ABCF /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B1441253F2DB100D3ABCF /* Color+Extension.swift */; };
+		5F6B1442253F2DB100D3ABCF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B1441253F2DB100D3ABCF /* Color.swift */; };
 		5F6B145425409FE400D3ABCF /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B145325409FE400D3ABCF /* StockDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F468CE32540AF41005A19AA /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		5F6B13CB253CB56500D3ABCF /* MarketFury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketFury.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6B13CE253CB56500D3ABCF /* MarketFuryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketFuryApp.swift; sourceTree = "<group>"; };
 		5F6B13D0253CB56500D3ABCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		5F6B1429253D724100D3ABCF /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		5F6B142E253D751900D3ABCF /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		5F6B1438253E11DE00D3ABCF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		5F6B1441253F2DB100D3ABCF /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		5F6B1441253F2DB100D3ABCF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5F6B145325409FE400D3ABCF /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,7 +203,8 @@
 		5F6B1440253F2D6800D3ABCF /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				5F6B1441253F2DB100D3ABCF /* Color+Extension.swift */,
+				5F6B1441253F2DB100D3ABCF /* Color.swift */,
+				5F468CE32540AF41005A19AA /* Typography.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -352,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6B13D1253CB56500D3ABCF /* ContentView.swift in Sources */,
-				5F6B1442253F2DB100D3ABCF /* Color+Extension.swift in Sources */,
+				5F6B1442253F2DB100D3ABCF /* Color.swift in Sources */,
 				5F6B1417253D6ABD00D3ABCF /* HomeTab.swift in Sources */,
 				5F6B142F253D751900D3ABCF /* Portfolio.swift in Sources */,
 				5F6B142A253D724100D3ABCF /* Stock.swift in Sources */,
@@ -360,6 +363,7 @@
 				5F6B145425409FE400D3ABCF /* StockDetailView.swift in Sources */,
 				5F6B13CF253CB56500D3ABCF /* MarketFuryApp.swift in Sources */,
 				5F6B1439253E11DE00D3ABCF /* CardView.swift in Sources */,
+				5F468CE42540AF41005A19AA /* Typography.swift in Sources */,
 				5F6B1406253CD19A00D3ABCF /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

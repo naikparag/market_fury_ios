@@ -7,6 +7,7 @@ import SwiftUI
 struct Portfolio: View {
     var body: some View {
         Text("Portfolio coming soon.")
+            .h2()
     }
 }
 
