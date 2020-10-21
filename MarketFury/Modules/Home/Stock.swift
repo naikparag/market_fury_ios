@@ -6,7 +6,11 @@ import SwiftUI
 
 struct Stock: View {
     var body: some View {
-        Text("All our Stock go here")
+        NavigationView {
+            NavigationLink(destination: StockDetailView()) {
+                Text("All our Stock go here")
+            }
+        }
     }
 }
 

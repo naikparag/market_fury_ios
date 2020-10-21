@@ -6,11 +6,11 @@ import SwiftUI
 
 extension Color {
 
-    static private let purple = Color(hexString: "#323232")
-    static private let green = Color(hexString: "#03DAC6")
-    static private let black = Color(hexString:"#121212")
-    static private let white = Color(hexString: "#FFFFFF")
-    static private let red = Color(hexString: "#C51162")
+    static private let purple = Color(hex: "#323232")
+    static private let green = Color(hex: "#03DAC6")
+    static private let black = Color(hex:"#121212")
+    static private let white = Color(hex: "#FFFFFF")
+    static private let red = Color(hex: "#C51162")
     
     static let primary = purple
     static let secondary = green
@@ -26,22 +26,21 @@ extension Color {
 }
 
 extension Color {
-    convenience init(hexString: String) {
-        
-        let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        let scanner = Scanner(string: hexString)
-        if hexString.hasPrefix("#") {
-            scanner.scanLocation = 1
+    
+    init(hex: String) {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
         }
-        var color: UInt32 = 0
-        scanner.scanHexInt32(&color)
-        let mask = 0x000000FF
-        let redValue = Int(color >> 16) & mask
-        let greenValue = Int(color >> 8) & mask
-        let blueValue = Int(color) & mask
-        let red = CGFloat(redValue) / 255.0
-        let green = CGFloat(greenValue) / 255.0
-        let blue = CGFloat(blueValue) / 255.0
+        
+        var rgbValue:UInt64 = 0
+        Scanner(string: cString).scanHexInt64(&rgbValue)
+        
+        let red = Double((rgbValue & 0xFF0000) >> 16) / 255.0
+        let green = Double((rgbValue & 0x00FF00) >> 8) / 255.0
+        let blue = Double(rgbValue & 0x0000FF) / 255.0
+        
         self.init(.sRGB, red: red, green: green, blue: blue)
     }
 }

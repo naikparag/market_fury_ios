@@ -20,7 +20,7 @@ struct Home: View {
         .background(Color.white)
     }
 }
-    
+
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()

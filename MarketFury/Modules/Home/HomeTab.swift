@@ -10,7 +10,7 @@ struct HomeTabView: View {
             UITabBar.appearance().barTintColor = UIColor.black
             UITabBar.appearance().isTranslucent = true
         }
-    
+
     var body: some View {
         TabView {
             Home()
