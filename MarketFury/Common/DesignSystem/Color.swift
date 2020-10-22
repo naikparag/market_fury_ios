@@ -1,5 +1,5 @@
 //
-//  Color+Extension.swift
+//  Color.swift
 //
 
 import SwiftUI
@@ -46,22 +46,21 @@ extension Color {
     }
 }
 
-
 struct Color_Previews: PreviewProvider {
     static var previews: some View {
         VStack(alignment: .leading, spacing: 8){
             Text("Hello, World! - primary")
                 .background(Color.themePrimary)
                 .foregroundColor(Color.themeOnPrimary)
-                .padding()
             Text("Hello, World! - secondary")
                 .background(Color.themeSecondary)
                 .foregroundColor(.themeOnSecondary)
-                .padding()
             Text("Hello, World! - error")
                 .background(Color.themeError)
                 .foregroundColor(.themeOnError)
-                .padding()
+            Text("Hello, World! - surface")
+                .background(Color.themeSurface)
+                .foregroundColor(.themeOnSurface)
         }
     }
 }

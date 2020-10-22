@@ -32,4 +32,3 @@ struct CardView_Previews: PreviewProvider {
         CardView(title: "Icici Bank", subTitle: "Looks like this stock is doing great.")
     }
 }
-    
