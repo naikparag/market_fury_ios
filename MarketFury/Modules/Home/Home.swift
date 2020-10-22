@@ -12,7 +12,7 @@ struct Home: View {
     var body: some View {
         ScrollView {
             ForEach((1...5), id: \.self) {
-                CardView(title: "Stock \($0)", subTitle: "Some common large text")
+                CardView(title: "My Fav Stock \($0)", subTitle: "Some common large text. So large that it should kinda look like a para. This will allow us to do some cool testing with font spacing and see how it feels on a real device.")
             }
         }
         .padding()

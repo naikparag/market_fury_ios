@@ -14,15 +14,16 @@ struct CardView: View {
             Spacer()
             VStack{
                 Text(title)
-                    .h2()
-                Text(subTitle)
                     .h3()
+                Text(subTitle)
+                    .body2()
             }
+            .padding(Dimen.s)
             Spacer()
         }
-        .background(Color.gray)
-        .cornerRadius(8)
-        .padding(.top)
+        .background(Color.themeSurface)
+        .cornerRadius(Dimen.s)
+        .padding(.all, Dimen.xss)
     }
 }
 

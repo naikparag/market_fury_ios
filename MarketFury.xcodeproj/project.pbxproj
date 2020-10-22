@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F468CE42540AF41005A19AA /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F468CE32540AF41005A19AA /* Typography.swift */; };
+		5F468CFA2541579B005A19AA /* Dimen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F468CF92541579B005A19AA /* Dimen.swift */; };
 		5F6B13CF253CB56500D3ABCF /* MarketFuryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B13CE253CB56500D3ABCF /* MarketFuryApp.swift */; };
 		5F6B13D1253CB56500D3ABCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6B13D0253CB56500D3ABCF /* ContentView.swift */; };
 		5F6B13D3253CB56900D3ABCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6B13D2253CB56900D3ABCF /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		5F468CE32540AF41005A19AA /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		5F468CF92541579B005A19AA /* Dimen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimen.swift; sourceTree = "<group>"; };
 		5F6B13CB253CB56500D3ABCF /* MarketFury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketFury.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6B13CE253CB56500D3ABCF /* MarketFuryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketFuryApp.swift; sourceTree = "<group>"; };
 		5F6B13D0253CB56500D3ABCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				5F6B1441253F2DB100D3ABCF /* Color.swift */,
 				5F468CE32540AF41005A19AA /* Typography.swift */,
+				5F468CF92541579B005A19AA /* Dimen.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				5F6B142A253D724100D3ABCF /* Stock.swift in Sources */,
 				5F6B1425253D71FC00D3ABCF /* Home.swift in Sources */,
 				5F6B145425409FE400D3ABCF /* StockDetailView.swift in Sources */,
+				5F468CFA2541579B005A19AA /* Dimen.swift in Sources */,
 				5F6B13CF253CB56500D3ABCF /* MarketFuryApp.swift in Sources */,
 				5F6B1439253E11DE00D3ABCF /* CardView.swift in Sources */,
 				5F468CE42540AF41005A19AA /* Typography.swift in Sources */,

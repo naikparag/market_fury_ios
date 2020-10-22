@@ -10,11 +10,12 @@ extension Color {
     static private let green = Color(hex: "#03DAC6")
     static private let black = Color(hex:"#121212")
     static private let white = Color(hex: "#FFFFFF")
+    static private let offWhite = Color(hex: "#EFEFEF")
     static private let red = Color(hex: "#C51162")
     
     static let themePrimary = purple
     static let themeSecondary = green
-    static let themeSurface = white
+    static let themeSurface = offWhite
     static let themeBackground = white
     static let themeError = red
     
@@ -48,10 +49,19 @@ extension Color {
 
 struct Color_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView{
-            /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/.foregroundColor(.themePrimary)
-            Text("Hello, World!").foregroundColor(.themeSecondary)
-            /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/.foregroundColor(.themeError)
+        VStack(alignment: .leading, spacing: 8){
+            Text("Hello, World! - primary")
+                .background(Color.themePrimary)
+                .foregroundColor(Color.themeOnPrimary)
+                .padding()
+            Text("Hello, World! - secondary")
+                .background(Color.themeSecondary)
+                .foregroundColor(.themeOnSecondary)
+                .padding()
+            Text("Hello, World! - error")
+                .background(Color.themeError)
+                .foregroundColor(.themeOnError)
+                .padding()
         }
     }
 }
